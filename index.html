@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualisateur de Convoyeurs 3D</title>
+  <style>
+    body { margin: 0; }
+    canvas { display: block; }
+    #config-editor {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    textarea {
+      width: 300px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div id="config-editor">
+    <h3>Configuration des Convoyeurs</h3>
+    <textarea id="config"></textarea>
+    <button onclick="updateConveyors()">Mettre à jour</button>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
